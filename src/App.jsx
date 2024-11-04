@@ -1,13 +1,15 @@
-import './App.css'
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
+import { Outlet } from "react-router-dom"
 
 function App() {
 
   return (
-    <div className='bg-gray-600'>
-      <div className='text-orange-400'>
-        hello
-      </div>
-    </div>
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
   )
 }
 
