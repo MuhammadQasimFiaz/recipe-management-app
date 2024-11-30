@@ -15,14 +15,14 @@ import Contact from "./components/Contact/Contact.jsx";
 import AddRecipe from "./components/AddRecipe/AddRecipe.jsx";
 import { Provider } from "react-redux";
 import { store } from "./app/store.js";
-// import AIGeneratedRecipes from "./components/AI/AIGeneratedRecipes.jsx";
+import AIGeneratedRecipes from "./components/AI/AiGeneratedRecipes.jsx"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<Home />} />
       <Route path="recipeList" element={<RecipeList />} />
-      {/* <Route path="get-recipe" element={<AIGeneratedRecipes />} /> */}
+      <Route path="get-recipe" element={<AIGeneratedRecipes />} />
       <Route path="addRecipe" element={<AddRecipe />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
